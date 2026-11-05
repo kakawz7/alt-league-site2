@@ -28,8 +28,12 @@ footer{border-top:1px solid var(--line);padding:25px 0 32px;color:#898593;font-s
 
 /* Identidade visual oficial Alt League */
 .brandmark-image{width:42px;height:42px;object-fit:cover;object-position:center;border-radius:11px;border:1px solid #d8c9f2;box-shadow:0 3px 12px #5b35a52b;flex:0 0 auto}
-.brand-art{min-height:0;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.brand-art img{display:block;width:100%;max-width:430px;aspect-ratio:1.11/1;object-fit:cover;object-position:center;border-radius:16px;border:1px solid #d9c8f4;box-shadow:0 18px 45px #50308020}
+.brand-art{min-height:0;min-width:0;width:100%;display:flex;flex-direction:column;gap:8px;align-items:center;overflow:hidden}
+.brand-art img{display:block;width:100%;max-width:560px;height:auto;aspect-ratio:3/1;object-fit:contain;object-position:center;border-radius:14px;border:1px solid #d9c8f4;box-shadow:0 12px 32px #50308018;background:#eee7fa}
+.art-caption{position:static;max-width:100%;text-align:center;overflow-wrap:anywhere;letter-spacing:.8px;line-height:1.5;padding:0 8px}
+.hero-art{min-width:0;max-width:100%;overflow:hidden}
+.hero-copy,.hero h1,.hero-note{min-width:0;overflow-wrap:break-word}
+.hero h1{letter-spacing:clamp(-5px,-.06em,-2px);word-break:normal}
 :root{--purple:#7040c4;--purple-dark:#4d268f;--lav:#eee6fb;--line:#e7e0f1}
 .nav{background:#f7f6faee}
 .primary,.navcta{background:linear-gradient(110deg,#6334b4,#4c278b)}
