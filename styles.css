@@ -58,3 +58,26 @@ a,button,.tile,.panel,.rule,.info{transition:background-color .25s,border-color 
 .tile:hover,.panel:hover,.info:hover{transform:translateY(-3px);box-shadow:0 14px 32px #263e7013;border-color:#bdcfee}
 @media(max-width:800px){.links{background:#edf2fb}.hero:after{right:-260px}}
 @media(prefers-reduced-motion:reduce){.hero-inner,.hero-meta,.stats,.hero:after,.sectionhead,.feature-main,.tile,.info,.panel,.rule,.soon{animation:none!important;animation-timeline:auto!important}}
+
+/* Free tournament + registration pages */
+.promo-tournament{margin:34px auto 0;padding:30px 34px;border:1px solid #cbd9f0;border-radius:12px;background:linear-gradient(115deg,#e0eafb,#eae8f8 58%,#e1eff8);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.promo-tournament h2{font:700 clamp(25px,4vw,38px)/1.05 'Outfit',sans-serif;letter-spacing:-1.7px;margin:10px 0}
+.promo-tournament p{color:#64728b;font-size:13px;line-height:1.8;margin:0;max-width:540px}
+.form-shell{max-width:760px;margin:0 auto 90px;padding:clamp(22px,5vw,42px);border:1px solid var(--line);border-radius:13px;background:rgba(248,250,255,.92);box-shadow:0 18px 48px #263e7010}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-field{display:flex;flex-direction:column;gap:8px}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-size:11px;font-weight:800;color:#40577f;letter-spacing:.3px}
+.form-field input,.form-field select,.form-field textarea{width:100%;border:1px solid #d4deee;border-radius:7px;padding:13px 14px;background:#fff;color:#172238;font:500 13px 'Manrope',sans-serif;outline:none;transition:border-color .2s,box-shadow .2s}
+.form-field textarea{min-height:100px;resize:vertical}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:#7292d2;box-shadow:0 0 0 3px #7292d21c}
+.form-note{padding:14px 16px;border-radius:7px;background:#eaf0fc;color:#526789;font-size:11px;line-height:1.7;margin:20px 0}
+.form-check{display:flex;align-items:flex-start;gap:10px;color:#586985;font-size:11px;line-height:1.7}
+.form-check input{margin-top:3px;accent-color:#5277c8}
+.form-submit{border:0;cursor:pointer;font:800 12px 'Manrope',sans-serif}
+.form-status{display:none;margin-top:16px;padding:13px 15px;border-radius:7px;background:#e8f1ff;color:#34558e;font-size:12px;line-height:1.7}
+.form-status.show{display:block}
+html.has-js .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+html.has-js .reveal.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:800px){.promo-tournament{align-items:flex-start;flex-direction:column;padding:25px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){html.has-js .reveal,html.has-js .reveal.is-visible{opacity:1;transform:none;transition:none}}
