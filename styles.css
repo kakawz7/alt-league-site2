@@ -85,3 +85,14 @@ html.has-js .reveal.is-visible{opacity:1;transform:translateY(0)}
 /* Use one consistent reveal system instead of experimental scroll timelines */
 .sectionhead,.feature-main,.tile,.info,.panel,.rule,.soon{animation:none!important}
 .pagehero{animation:none!important}
+
+/* Registration closed state and Discord ID helper */
+.registration-closed{margin-top:34px;margin-bottom:18px;border-color:#d4deef;background:linear-gradient(125deg,#f8faff,#e8eef9)}
+.closed-banner{display:inline-flex;align-items:center;gap:9px;padding:8px 11px;border-radius:5px;background:#e6ebf5;color:#52627e;font-size:10px;font-weight:800;letter-spacing:1.2px;margin-bottom:16px}
+.closed-dot{width:7px;height:7px;border-radius:50%;background:#8795ad;box-shadow:0 0 0 4px #8795ad20}
+.registration-closed h2{font:700 clamp(25px,4vw,34px)/1.1 'Outfit',sans-serif;letter-spacing:-1px;margin:0 0 10px}
+.registration-closed p{max-width:590px;color:#65728a;font-size:13px;line-height:1.8;margin:0 0 20px}
+#registration-form[aria-disabled=true]{opacity:.66;pointer-events:none;user-select:none}
+#registration-form input:disabled,#registration-form button:disabled{cursor:not-allowed;background:#edf1f7;color:#8b96a9;border-color:#dce3ef}
+.id-help{color:#456fc4;font-size:11px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.id-help:hover{color:#263e70}
