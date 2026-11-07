@@ -81,3 +81,7 @@ html.has-js .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s
 html.has-js .reveal.is-visible{opacity:1;transform:translateY(0)}
 @media(max-width:800px){.promo-tournament{align-items:flex-start;flex-direction:column;padding:25px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){html.has-js .reveal,html.has-js .reveal.is-visible{opacity:1;transform:none;transition:none}}
+
+/* Use one consistent reveal system instead of experimental scroll timelines */
+.sectionhead,.feature-main,.tile,.info,.panel,.rule,.soon{animation:none!important}
+.pagehero{animation:none!important}
